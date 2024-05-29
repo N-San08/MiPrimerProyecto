@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi primera página web</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./imagenes/Junior-Achievement-Argentina_Positivo-1.png" alt="logo de Junior">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://junior.org.ar/">HOME</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="https://junior.org.ar/inscripciones/">INSCRIPCIONES</a></li>
+                <li><a href="https://junior.org.ar/novedades/">NOVEDADES</a></li>
+                <li><a href="https://junior.org.ar/alumni/">ALUMNI</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide pointer-event" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-item-next carousel-item-start">
+                <img src="./imagenes/carrusel/main.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/carrusel/main2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active carousel-item-start">
+                <img src="./imagenes/carrusel/main3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="presentacion">
+        <h1>QUIÉNES SOMOS</h1>
+        
+            <P>Somos una de las ONG más grandes del mundo.A través del aprendizaje activo en educación financiera, formación
+                para el trabajo y emprendimiento, preparamos e inspiramos a los jóvenes para que sean protagonistas de su
+                futuro.
+    
+            </P>
+    
+       </div>
+    <div class="contenedor">
+        <div class="caja">
+            <img src="./imagenes/eldesafio.jpg" alt="">
+            <h1>El desafío</h1>
+            <div id="contenido1" style="display: none;">
+                <p>Insertos en la cuarta revolución industrial, la tecnología irrumpe en todos los ámbitos de la vida:
+                    aparecen la robótica, la biotecnología, la inteligencia artificial. Desaparecen profesiones y surgen
+                    nuevas.</p>
+            </div>
+            <button onclick="muestra_oculta('contenido1')" class="btn btn-primary" form="contenido">+</button>
+        </div>
+
+        <div class="caja">
+            <img src="./imagenes/lasolucion.jpg" alt="">
+            <h1>La solución</h1>
+            <div id="contenido2" style="display: none;">
+                 <p>Desde hace 100 años, promovemos una actitud emprendedora en millones de jóvenes para que se sientan
+                protagonistas y emprendedores de sus propias vidas.</p>
+            </div>
+           <button onclick="muestra_oculta('contenido2')" class="btn btn-primary" form="contenido">+</button>
+
+        </div>
+
+        <div class="caja">
+            <img src="./imagenes/impacto.jpg" alt="">
+            <h1>Impacto</h1>
+            <div id="contenido3" style="display: none;">
+                <p>Trabajamos en cientos de escuelas cada año formando a miles de jóvenes para que estén mejor preparados
+                para el futuro. </p>
+            </div>
+            
+            <button onclick="muestra_oculta('contenido3')" class="btn btn-primary" form="contenido">+</button>
+        </div>
+    </div>
+
+    <div id="nosotros">
+        <iframe class="iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0545097995564!2d-58.469481610925804!3d-34.60278310322042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33533433603c1%3A0x45810ad3a92f29c7!2sJunior%20Achievement%20Argentina!5e0!3m2!1ses-419!2shn!4v1716177828314!5m2!1ses-419!2shn"
+            width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <iframe class="iframe" width="560" height="315"
+            src="https://www.youtube.com/embed/CAvju4e-EPk?si=CG1BMZNpAKKE6W_R" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+
+
+    <footer>
+        <p>
+            Conocé nuestra Política de privacidad | ©2022 Junior Achievement Argentina. Todos los derechos reservados.
+        </p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="main.js" async defer></script>
+</body>
+
+</html>
